@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApp1.View.AddFood"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.View"
+        mc:Ignorable="d"
+        Title="AddFood" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Source="\Images\AddFood.png" Stretch="UniformToFill"></Image>
+        <StackPanel Height="300" Width="350" Background="Yellow">
+            <Label Style="{StaticResource label}">Food Name:</Label>
+            <TextBox x:Name="food_name" Style="{StaticResource text_box}"></TextBox>
+            <Label Style="{StaticResource label}">Food Cost</Label>
+            <TextBox x:Name="food_cost" Style="{StaticResource text_box}"></TextBox>
+            <Label Style="{StaticResource label}">Image Path:</Label>
+            <TextBox x:Name="food_image_path" Style="{StaticResource text_box}"></TextBox>
+            <Button Style="{StaticResource button}" HorizontalAlignment="Right" Width="60" Margin="0,10,25,0" Command="{Binding browse_image}">Browse</Button>
+            <Button Style="{StaticResource button}" Command="{Binding add_food}">Add Food</Button>
+        </StackPanel>
+        <ListView x:Name="food_list" Grid.Column="1" Background="Yellow"> 
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Height="100" Width="600">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                            <ColumnDefinition Width="5*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Source="{Binding FoodImage}" Stretch="Fill"></Image>
+                        <StackPanel Grid.Column="1">
+                            <StackPanel Orientation="Horizontal">
+                                <Label Style="{StaticResource label2}">Food Name:</Label>
+                                <TextBlock Style="{StaticResource text_Block2}" Text="{Binding FoodName}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Style="{StaticResource label2}">Food Cost:</Label>
+                                <TextBlock Style="{StaticResource text_Block2}" Text="{Binding FoodCost}"></TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>

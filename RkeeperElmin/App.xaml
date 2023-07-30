@@ -1,0 +1,23 @@
+﻿<Application x:Class="RkeeperElmin.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:RkeeperElmin"
+             StartupUri="View/LogIn.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\TextBox.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resources\Label.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resources\Button.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resources\PasswordBox.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resources\TextBlock.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resources\Button2.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resources\Button3.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resources\TextBlock2.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resources\Label2.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resources\StackPanel.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resources\TextBlock3.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

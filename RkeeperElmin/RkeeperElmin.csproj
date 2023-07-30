@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\AddFood.png" />
+    <None Remove="Images\Admin.webp" />
+    <None Remove="Images\Fail.webp" />
+    <None Remove="Images\FoodImages\BigMac.jpg" />
+    <None Remove="Images\FoodImages\Chicken Burger.jpg" />
+    <None Remove="Images\FoodImages\FrenchFries.webp" />
+    <None Remove="Images\FoodImages\Menu.jpg" />
+    <None Remove="Images\FoodImages\StrawBery.jpg" />
+    <None Remove="Images\Logged.webp" />
+    <None Remove="Images\Patato.webp" />
+    <None Remove="Images\WaiterTable.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\AddFood.png" />
+    <Resource Include="Images\Admin.webp" />
+    <Resource Include="Images\Fail.webp" />
+    <Resource Include="Images\FoodImages\BigMac.jpg" />
+    <Resource Include="Images\FoodImages\Chicken Burger.jpg" />
+    <Resource Include="Images\FoodImages\FrenchFries.webp" />
+    <Resource Include="Images\FoodImages\Menu.jpg" />
+    <Resource Include="Images\FoodImages\StrawBery.jpg" />
+    <Resource Include="Images\Logged.webp" />
+    <Resource Include="Images\Patato.webp" />
+    <Resource Include="Images\WaiterTable.jpg" />
+  </ItemGroup>
+
+</Project>
